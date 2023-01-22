@@ -5,14 +5,30 @@ var startGame = document.querySelector("#start")
 var questionDiv = document.querySelector("#questions")
 var questionText = document.querySelector("#question-title")
 var // add buttons to declare variables for
-var feedback = document.querySelector("#feedback")
+var feedbackDiv = document.querySelector("#feedback")
 var feedbackComments = document.querySelector("#feedback-comments")
+var timerElement = document.querySelector("#time")
+var endScreen = document.querySelector("#end-screen")
 
-    // Event listener to begin game
+// Event listener to begin game
+
+startGame.addEventListener("click", function() {
+    console.log("The quiz has begun");
+    startScreen.setAttribute("class", "hide");
+    questionDiv.setAttribute("class", "show");
+    feedbackDiv.setAttribute("class", "show");
+    playGame();
+}
+
 
 // Function to generate and show questions at random
 
+function randomQuestion() {
+    let index = Math.floor(Math.random() * questions.length);
     // Timer to begin - 60 seconds
+    timerCount = 60;
+    startTimer();
+}
 
     // Timer to begin countdown to zero
 
