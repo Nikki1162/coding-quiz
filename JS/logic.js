@@ -1,5 +1,13 @@
 // Declare variables
 
+var startScreen = document.querySelector("#start-screen")
+var startGame = document.querySelector("#start")
+var questionDiv = document.querySelector("#questions")
+var questionText = document.querySelector("#question-title")
+var // add buttons to declare variables for
+var feedback = document.querySelector("#feedback")
+var feedbackComments = document.querySelector("#feedback-comments")
+
     // Event listener to begin game
 
 // Function to generate and show questions at random
