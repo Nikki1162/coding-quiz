@@ -16,7 +16,7 @@
 
     <div class="wrapper">
       <div id="start-screen" class="start">
-        <h1>Coding JavaScript Quiz Challenge</h1>
+        <h1>Coding Quiz Challenge</h1>
         <p>
           Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
         </p>
@@ -24,30 +24,30 @@
       </div>
 
       <div id="questions" class="hide">
-        <h2 id="question-title"></h2>
-        <div id="choices" class="choices"></div>
-        <!-- Add buttons -->
+        <h2 id="question-title">Default Question Text</h2>
+        <div id="choices" class="choices">
           <button id="button-a">A.</button>
           <button id="button-b">B.</button>
           <button id="button-c">C.</button>
           <button id="button-d">D.</button>
+        </div>
       </div>
 
       <div id="end-screen" class="hide">
         <h2>All done!</h2>
-        <p>Your final score is <span id="user-score"></span>.</p>
+        <p>Your final score is <span id="final-score"></span>.</p>
         <p>
-          Enter initials: <input type="text" id="initials" max="3" />
+          Enter initials: <input type="text" id="initials" max="3"/>
           <button id="submit">Submit</button>
         </p>
       </div>
 
       <div id="feedback" class="feedback hide">
-        <h2 id="feedback-comments"></h2>
+        <h2 id="feedback-text"></h2>
       </div>
     </div>
 
-    <script src="/js/questions.js"></script>
-    <script src="/js/logic.js"></script>
+    <script src="starter/JS/questions.js"></script>
+    <script src="starter/JS/logic.js"></script>
   </body>
 </html>
