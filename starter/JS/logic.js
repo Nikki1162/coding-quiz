@@ -52,12 +52,16 @@ function playgame() {
             var checkAnswer = currentQuestion.CorrectAnswer;
             if(i.innerHTML === checkAnswer){
             score++;
+            var audio = new Audio('starter/assets/sfx/correct.wav');
+            audio.play();
             feedbackText.innerHTML = "Woohoo! Correct!";
             getNewQuestion();
             }
             else{
                 wrongAnswer = true;
                 feedbackText.innerHTML = "Whoops! That's not quite right";
+                var audio = new Audio('starter/assets/sfx/incorrect.wav');
+                audio.play();
                 getNewQuestion();
             }
         })
@@ -88,9 +92,7 @@ function endGame(){
 
 // Add score to high score list within an object, use local storage to call score list and allow user to store initials with their score
 
-    // Function to submit score
-
-    
+// Function to submit score  
 
 // Save the list into local storage with the addition of the user's initials and new score
 
