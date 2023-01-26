@@ -72,23 +72,25 @@ function endGame(){
     questionDiv.setAttribute("class", "hide");
     feedbackDiv.setAttribute("class", "hide");
     endScreen.setAttribute("class", "show");
+    console.log("getting submit button")
+    var submitButton = document.querySelector("#submit");
+    console.log(submitButton)
+    submitButton.addEventListener("click", function(event){
+        console.log("on click")
+    event.preventDefault();
+    addScore();
+    submitButton.disabled = "true";
+    });
     var finalScore = document.querySelector("#final-score");
     finalScore.innerHTML=score;
-    submitScore();
+    // submitScore();
 }
 
 // Add score to high score list within an object, use local storage to call score list and allow user to store initials with their score
 
     // Function to submit score
 
-function submitScore(){
-    var submitButton = document.querySelector("#submit");
-    submitButton.addEventListener("click", function(event){
-    event.preventDefault();
-    addScore();
-    submitButton.disabled = "true";
-});
-}
+    
 
 // Save the list into local storage with the addition of the user's initials and new score
 
