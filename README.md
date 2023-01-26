@@ -34,4 +34,4 @@ https://github.com/Nikki1162/coding-quiz
 
 The live application:
 
-// Insert app link
+https://nikki1162.github.io/coding-quiz/
